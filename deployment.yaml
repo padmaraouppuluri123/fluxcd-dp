@@ -38,7 +38,7 @@ data:
       <body>
         <div class="container">
           <h1>Welcome to FluxCD!</h1>
-          <p>Your GitOps-powered deployment is up and running 🚀</p>
+          <p>Your GitOps-powered deployment is up and running</p>
           <p>This sample app was deployed automatically using FluxCD.</p>
         </div>
       </body>
