@@ -63,7 +63,7 @@ spec:
     spec:
       containers:
       - name: web-app
-        image: sushmamounika/my-repo-sm:10
+        image: sushmamounika/my-repo-sm:11
         command: ["/bin/sh"]
         args:
           - -c
