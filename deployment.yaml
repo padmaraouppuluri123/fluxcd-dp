@@ -35,9 +35,43 @@ metadata:
 data:
   index.html: |
     <html>
-    <head><title>FluxCD Sample App</title></head>
-    <body><h1>Welcome to FluxCD!</h1></body>
-    </html>
+  <head>
+    <title>FluxCD App</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f2f2f2;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        text-align: center;
+        padding: 40px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+      p {
+        font-size: 18px;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1> Welcome to FluxCD!</h1>
+      <p>Your GitOps-powered deployment is up and running </p>
+      <p>This sample app was deployed automatically using FluxCD.</p>
+    </div>
+  </body>
+</html>
 
 ---
 apiVersion: v1
