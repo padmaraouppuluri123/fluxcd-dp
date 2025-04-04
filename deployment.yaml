@@ -63,7 +63,7 @@ spec:
     spec:
       containers:
       - name: web-app
-        image: nginx:latest
+        image: sushmamounika/my-repo-sm:latest   # <-- Your DockerHub image
         command: ["/bin/sh"]
         args:
           - -c
@@ -80,6 +80,7 @@ spec:
       - name: web-content
         configMap:
           name: web-content
+
 
 ---
 
