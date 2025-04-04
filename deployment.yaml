@@ -63,7 +63,7 @@ spec:
     spec:
       containers:
       - name: web-app
-        image: sushmamounika/my-repo-sm:latest   # <-- Your DockerHub image
+        image: sushmamounika/my-repo-sm:10
         command: ["/bin/sh"]
         args:
           - -c
