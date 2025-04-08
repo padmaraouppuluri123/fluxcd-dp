@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: web-content
-  namespace: default
+  namespace: fluxcd
 data:
   index.html: |
     <html>
