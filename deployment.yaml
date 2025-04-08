@@ -1,14 +1,8 @@
 ---
 apiVersion: v1
-kind: Namespace
-metadata:
-  name: fluxcd-1
----
-apiVersion: v1
 kind: ConfigMap
 metadata:
   name: web-content
-  namespace: fluxcd-1
 data:
   index.html: |
     <html>
@@ -54,7 +48,6 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: web-app
-  namespace: fluxcd-1
 spec:
   replicas: 2
   selector:
@@ -88,7 +81,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: web-app-service
-  namespace: fluxcd-1
 spec:
   type: LoadBalancer
   selector:
