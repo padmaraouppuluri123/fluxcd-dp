@@ -52,7 +52,7 @@ metadata:
   name: web-app
   namespace: fluxcd
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: web-app
